@@ -1,0 +1,148 @@
+/* General Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Label Styles */
+label {
+  font-size: 20px;
+}
+
+/* Full Height and Width */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Light grey background for the whole page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styles */
+.container {
+  background-color: #ffffff; /* White background for the container */
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1); /* Softer box-shadow */
+}
+
+.container > h1 {
+  margin-bottom: 20px;
+  color: #333333; /* Dark grey for the header */
+}
+
+/* Form Styles */
+.container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc; /* Light grey border */
+}
+
+.container input::placeholder {
+  font-size: 12px;
+  font-style: italic;
+  color: #999999; /* Light grey for placeholders */
+}
+
+button {
+  background-color: #6200ea; /* Purple background for buttons */
+  border: none;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #3700b3; /* Darker purple for hover effect */
+}
+
+/* User Section */
+.user-section {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+
+/* Expense List Styles */
+.expense-list {
+  font-family: 'Arial', sans-serif;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Light grey border */
+  padding: 5px 0;
+}
+
+.expense-description {
+  font-weight: bold;
+  color: #333333; /* Dark grey for text */
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Red background for delete buttons */
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.delete-button:hover {
+  background-color: #c0392b; /* Darker red for hover effect */
+}
+
+/* Amounts Container */
+.amounts-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+.income-amount {
+  color: #27ae60; /* Green for income amount */
+  font-weight: bold;
+}
+
+.expense-amount {
+  color: #e74c3c; /* Red for expense amount */
+  font-weight: bold;
+  font-size: 1.2em; /* Increase font size */
+  margin: 10px 0; /* Add some margin */
+  padding: 5px; /* Add some padding */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #fdecea; /* Light red background color */
+}
